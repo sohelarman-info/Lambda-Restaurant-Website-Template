@@ -1,0 +1,100 @@
+/* Small (col) devices (landscape phones, 320px and up) */
+@media (min-width: 320px) and (max-width: 575px) { 
+    .banner_content h2 {
+        font-family: "Yeseva One";
+        font-size: 28px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    
+ }
+
+/* Small (col-xs) devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+    .banner_content h2 {
+        font-family: "Yeseva One";
+        font-size: 32px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .banner_button a {
+        color: #fff;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 8px 20px;
+        font-size: 14px;
+        border: 1px solid #fff;
+        margin: 5px;
+        transition: all linear 0.3s;
+    }
+    .header h2 {
+        background-image: url("../images/title.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Yeseva One';
+        color: #cc9900;
+        margin: 4px 0;
+    }
+    .food_right{
+        display: none;
+    }
+    .fine_content h2 {
+        background-image: url("../images/fine_header.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        padding-bottom: 31px;
+        text-align: center;
+        font-size: 32px;
+        font-family: 'Yeseva One';
+        color: #fff;
+        margin: 20px 0;
+    }
+    .guest_review h2 {
+        padding-bottom: 30px;
+    }
+    .guest_review p {
+        color: #dde0df;
+        font-size: 23px;
+        font-family: "Gentium Book Basic";
+        font-weight: normal;
+        position: relative;
+    }
+    .order_img img {
+        width: 100%;
+        display: none;
+    }
+ }
+
+/* Medium (col-sm) devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+    .navbar-brand img {
+        width: 50%;
+    }
+    .banner_content h2 {
+        font-family: "Yeseva One";
+        font-size: 32px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+ }
+
+/* Large (col-md) devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+    .banner_content h2 {
+        font-family: "Yeseva One";
+        font-size: 32px;
+        color: #fff;
+        margin-bottom: 35px;
+    }
+ }
+
+/* X-Large (col-lg) devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399px) { ... }
+
+/* XX-Large (col-xl) devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { ... }
+
+

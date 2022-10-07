@@ -1,0 +1,411 @@
+/*!
+Theme Name: Restaurant
+Theme URI: https://restaurant.lamcoder.com
+Author: Sohel Arman
+Author URI: https://lamcoder.com
+Description: Professional Web Developer. Author by Lamcoder
+Version: 8.1.0
+Requires PHP: 5.5
+Tested up to: 1.0
+License: lamcoder
+License URI: https://lamcoder.com
+Template: Restaurant
+Text Domain: Custom Domain
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&family=Lato&family=Open+Sans&family=Yeseva+One&display=swap');
+
+/* font-family: 'Gentium Book Basic', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Yeseva One', cursive; */
+
+*{padding: 0; margin: 0; outline: 0}
+a{text-decoration: none}
+ul,ol{list-style: none; padding: 0;}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: "Lato";
+    overflow-x: hidden;
+}
+
+
+/* header part css start */
+#header{
+	background-image: url("../images/banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    width: 100%;
+}
+.navbar{
+	--bs-navbar-padding-y: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
+.fixed{
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.navbar .header-content {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 40px 0;
+    width: 100%;
+    -moz-transition: padding 0.3s;
+    -o-transition: padding 0.3s;
+    -webkit-transition: padding 0.3s;
+    transition: padding 0.3s;
+}
+.navbar-brand img{
+	width: 80%;
+}
+.nav-link {
+    color: #fff;
+    font-size: 21px;
+    font-family: "Gentium Book Basic";
+    font-weight: 500;
+    text-shadow: none;
+    padding-top: 29px;
+}
+.nav-link:hover {
+    color: #c3c1b9;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--bs-navbar-active-color);
+    border-top: 3px solid #c3c1b9;
+    color: #c3c1b9;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.nav-item ul{
+    display: flex;
+}
+.nav-item ul li a{
+    font-size: 16px;
+    margin-top: 5px;
+    color: #dab33e;
+    
+}
+.banner{
+	text-align: center;
+	padding: 150px 0;
+}
+.banner_content h2{
+	font-family: "Yeseva One";
+	font-size: 90px;
+	color: #fff;
+	margin-bottom: 35px;
+}
+.banner_button{
+    margin-top: 50px;
+}
+.banner_button a {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 30px;
+    font-size: 18px;
+    border: 1px solid #fff;
+    margin: 5px;
+    transition: all linear 0.3s;
+}
+.banner_button a:hover {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 30px;
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    transition: all linear 0.3s;
+}
+.header h2 {
+    background-image: url("../images/title.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 32px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Yeseva One';
+    color: #cc9900;
+    margin: 20px 0;
+
+}
+/* header part css end */
+
+
+/* food part css start */
+
+#food{
+    padding: 50px 0;
+    background-image: url('../images/bg1.png');
+    background-size: cover;
+    background-repeat: repeat;
+}
+.food_left{
+    text-align: center;
+}
+.food_left p{
+    font-size: 13px;
+    color: #4c4c4c;
+    padding: 30px 50px;
+}
+.food_left {
+    margin-top: 50px;
+}
+.food_left img {
+    margin-left: 70px;
+}
+.food_right img{
+    width: 100%;
+}
+/* food part css end */
+
+/* fine section css start */
+#fine{
+    background-image: url('../images/banner2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.fine_content{
+    text-align: center;
+    padding: 80px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.fine_content h2 {
+    background-image: url("../images/fine_header.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Yeseva One';
+    color: #fff;
+    margin: 20px 0;
+
+}
+.fine_content p{
+    color: #ffffff;
+    margin-bottom: 60px;
+    font-size: 15px;
+}
+/* fine section css end */
+
+
+/* prices section css start */
+#prices{
+    background-color: #f0f4f4;
+    background-image: url('../images/bg2.png');
+    background-size: cover;
+    background-repeat: repeat;
+    padding: 100px 0;
+}
+.price_item{
+    padding: 15px;
+}
+.special{
+    border: 1px solid #c89f2d;
+    position: relative;
+}
+.sp {
+    position: absolute;
+    right: -1px;
+    top: -26px;
+    background-image: url(../images/special_bg.png);
+    background-size: cover;
+    background-repeat: repeat;
+    color: #fff;
+    font-size: 14px;
+    padding: 2px 22px;
+}
+.price_item h4{
+    font-size: 21px;
+    color: #c89f2d;
+    border-bottom: 1px solid #c89f2d;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-family: 'Yeseva One';
+}
+.price_item h4 span{
+    float: right;
+}
+.price_item p{
+    font-size: 16px;
+    color: #4c4c4c;
+    margin-bottom: 15px;
+}
+/* prices section css end */
+
+
+
+/* review section css start */
+#review{
+    background-image: url('../images/banner3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.guest_review{
+    text-align: center;
+    padding: 80px;
+    background: rgba(0, 0, 0, 0.7);
+}
+.guest_review h2 {
+    background-image: url("../images/fine_header.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Yeseva One';
+    color: #fff;
+    margin: 20px 0;
+}
+.guest_review p {
+    color: #dde0df;
+    font-size: 25px;
+    font-family: "Gentium Book Basic";
+    font-weight: bold;
+    position: relative;
+}
+.guest_review p::after {
+    content: '“';
+    color: #a1a39f;
+    font-size: 76px;
+    font-family: "Georgia";
+    font-weight: bold;
+    position: absolute;
+    top: -34px;
+    left: -38px;
+}
+.guest_review h6 {
+    color: #dde0df;
+    font-size: 18px;
+    font-family: "Gentium Book Basic";
+}
+/* review section css end */
+
+/* order section css start */
+#order{
+    padding: 100px 0;
+    background-image: url('../images/bg1.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: #f0f4f4;
+}
+.order_img img{
+    width: 100%;
+}
+.order_content{
+    text-align: center;
+}
+.order_content p{
+    color: #4c4c4c;
+    font-size: 16px;
+}
+.order_form{
+    margin-top: 30px;
+}
+.form-label{
+    color: #c9a131;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 0;
+    color: #212529;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    border: 1px solid #c8c6c6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control::placeholder {
+    font-style: italic;
+    font-size: 14px;
+    color: #7c7c7c;
+}
+.form-control:focus {
+    font-style: normal;
+    font-size: 16px;
+    color: #7c7c7c;
+    border: 1px solid #c9a131;
+    box-shadow: none;
+}
+.book_now {
+    background: #c9a131;
+    border: 0;
+    border-radius: 0;
+    padding: 3px 30px;
+    font-size: 16px;
+    font-family: "Open Sans";
+}
+.book_now:hover {
+    background: #191919;
+    color: #fff;
+}
+/* order section css end */
+
+
+/* footer section css start */
+#footer{
+    background-color: #191919;
+    padding: 100px 0;
+}
+.footer_item{
+    text-align: center;
+}
+.footer_item h2 {
+    background-image: url("../images/footer_header.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 21px;
+    font-family: 'Yeseva One';
+    color: #fff;
+    margin: 20px 0;
+
+}
+.footer_item p {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+.footer_item img {
+    margin-top: 30px;
+}
+.footer_item ul {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_item ul li{
+    margin: 10px;
+}
+.footer_item ul li a{
+    color: #fff;
+    transition: all linear 0.3s;
+}
+.footer_item ul li a:hover{
+    color: #c9a131;
+    transition: all linear 0.3s;
+}
+/* footer section css end */
